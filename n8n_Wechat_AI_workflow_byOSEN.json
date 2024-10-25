@@ -1,5 +1,5 @@
 {
-  "name": "开源微信个人AI助手-OSEN",
+  "name": "Assistente pessoal de IA WeChat de código aberto-OSEN",
   "nodes": [
     {
       "parameters": {
@@ -72,11 +72,11 @@
       ],
       "alwaysOutputData": false,
       "notesInFlow": true,
-      "notes": "消息是文件还是文本"
+      "notes": "A mensagem é um arquivo ou texto"
     },
     {
       "parameters": {
-        "content": "【需修改】将OSEN改成你希望能使用AI的人的微信昵称",
+        "content": " Precisa de modificação】Altere OSEN para o apelido WeChat da pessoa que você deseja usar AI",
         "height": 81.149879492335,
         "width": 156.0587970595445
       },
@@ -122,7 +122,7 @@
         340
       ],
       "notesInFlow": true,
-      "notes": "判断甚至是否是个人发送，否则是群消息"
+      "notes": "Determine se é enviado por um indivíduo, caso contrário, é uma mensagem de grupo"
     },
     {
       "parameters": {
@@ -160,7 +160,7 @@
     },
     {
       "parameters": {
-        "content": "【可选，将微信语音消息通过语音识别转成文字，不需要可以直接将节点链接的线去掉】\n1.需要使用 Azure API 密钥https://speech.microsoft.com/portal/speechtotexttool （免费用1年）放在第2个节点参数 Ocp-Apim-Subscription-Key 中\n\n2.第1个节点是将音频文件转为 wav,需要安装 https://hub.docker.com/r/kazhar/ffmpeg-api\n\n",
+        "content": "[Opcional, converta mensagens de voz do WeChat em texto por meio de reconhecimento de fala. Se não for necessário, você pode remover diretamente as linhas que conectam os nós.]\n1.Você precisa usar a chave API do Azure https://speech.microsoft.com/portal/speechtotexttool (gratuita por 1 ano) e colocá-la no segundo parâmetro do nó Ocp-Apim-Subscription-Key\n\n2. é Para converter arquivos de áudio para wav, você precisa instalar https://hub.docker.com/r/kazhar/ffmpeg-api\n\n",
         "height": 334.42979887828153,
         "width": 458.10022434547125
       },
@@ -175,7 +175,7 @@
     },
     {
       "parameters": {
-        "content": "【需修改】将OSEN改成你希望能使用保存到Notion的人的微信昵称\n\n第一个条件是设置触发词，默认是4种触发：保存笔记|保存到 Notion|保存到notion|保存到概念",
+        "content": "[Modificação necessária] Altere OSEN para o apelido WeChat da pessoa que você deseja salvar no Notion\n\nA primeira condição é definir a palavra de gatilho. O padrão são 4 gatilhos: Salvar nota|Salvar no Notion|Salvar no Notion| para o conceito",
         "height": 190.24253652796716,
         "width": 184.7673910162898
       },
@@ -190,7 +190,7 @@
     },
     {
       "parameters": {
-        "content": "【需修改】在 Credential 中添加你openai api key",
+        "content": "[Modificação necessária] Adicione sua chave de API openai em Credencial",
         "height": 177.98555287347148,
         "width": 192.56629330231743
       },
@@ -232,7 +232,7 @@
     },
     {
       "parameters": {
-        "content": "【需修改】1. 将 URL 中的 http://localhost:3001 改成你的 wechatbot-webhook 的地址\n2. 将 Token改成你部署时设置的 OGIN_API_TOKEN",
+        "content": "[Modificação necessária] 1. Altere http://localhost:3001 na URL para o endereço do seu wechatbot-webhook\n2. Altere o token para o OGIN_API_TOKEN que você definiu durante a implantação.",
         "height": 193.32831176998502,
         "width": 212.20948363716363
       },
@@ -247,7 +247,7 @@
     },
     {
       "parameters": {
-        "content": "【需修改】1.在 Credential 中添加你的 Notion Secrets，获取地址：https://www.notion.so/my-integrations\n2. 然后在 notion 页面中添加这个 integrations\n3. 在Database中选择你的",
+        "content": "[Modificação necessária] 1. Adicione seus segredos do Notion em Credencial, obtenha o endereço: https://www.notion.so/my-integrations\n2. Em seguida, adicione essas integrações na página de notificação\n3.",
         "height": 198.75694239071788,
         "width": 221.02183441645295
       },
@@ -262,7 +262,7 @@
     },
     {
       "parameters": {
-        "content": "【需修改】1. 将 URL 中的 http://localhost:3001 改成你的 wechatbot-webhook 的地址\n2. 将 Token改成你部署时设置的 OGIN_API_TOKEN",
+        "content": "[Modificação necessária] 1. Altere http://localhost:3001 na URL para o endereço do seu wechatbot-webhook\n2. Altere o token para o OGIN_API_TOKEN que você definiu durante a implantação.",
         "height": 184.71573358296143,
         "width": 205.0323351479773
       },
@@ -284,7 +284,7 @@
           "parameters": [
             {
               "name": "token",
-              "value": "你设置的token，没改的话默认是abcdefg123"
+              "value": "O token que você definiu será padronizado como abcdefg123 se não for alterado."
             }
           ]
         },
@@ -332,7 +332,7 @@
         340
       ],
       "notesInFlow": true,
-      "notes": "转换source为json，方便提取用户名"
+      "notes": "Converta a origem em json para facilitar a extração do nome de usuário"
     },
     {
       "parameters": {
@@ -343,7 +343,7 @@
           "parameters": [
             {
               "name": "language",
-              "value": "zh-CN"
+              "value": "pt-BR"
             }
           ]
         },
@@ -352,7 +352,7 @@
           "parameters": [
             {
               "name": "Ocp-Apim-Subscription-Key",
-              "value": "替换成你的Key"
+              "value": "Substitua pela sua chave"
             },
             {
               "name": "Accept",
@@ -394,7 +394,7 @@
             {
               "id": "19ded947-b0f2-4ca5-83c2-11a63442c8eb",
               "leftValue": "={{ $jmespath($json, \"DisplayText || body.content || result[0] \") }}",
-              "rightValue": "保存笔记|保存到 Notion|保存到notion|保存到概念",
+              "rightValue": "Salvar nota|Salvar no conceito|Salvar no conceito|Salvar no conceito",
               "operator": {
                 "type": "string",
                 "operation": "regex"
@@ -434,7 +434,7 @@
           "parameters": [
             {
               "name": "token",
-              "value": "你设置的token，没改的话默认是abcdefg123"
+              "value": "O token que você definiu será padronizado como abcdefg123 se não for alterado."
             }
           ]
         },
@@ -453,7 +453,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={ \n    \"to\": \"{{ $('getSource').item.json.from.payload.name }}\", \n    \"data\": {\n         \"content\": \"😊已保存到 Inbox\" \n    }\n}",
+        "jsonBody": "={ \n \"to\": \"{{ $('getSource').item.json.from.payload.name }}\", \n \"dados\": {\n \"conteúdo\ ": \"😊Salvo na Caixa de entrada\" \n }\n}",
         "options": {}
       },
       "id": "933df465-f4db-4eaa-82db-f7980c90d9e6",
@@ -481,7 +481,7 @@
       ],
       "webhookId": "3d4d2cc0-c692-478e-991d-530853bc6e7a",
       "notesInFlow": true,
-      "notes": "接受微信消息"
+      "notes": "Aceitar mensagens do WeChat"
     },
     {
       "parameters": {
@@ -513,12 +513,12 @@
           "value": "https://www.notion.so/0fe2f7de558b471eab07e9d871cdf4a9",
           "mode": "url"
         },
-        "title": "={{ $jmespath($json, \"DisplayText || body.content || result[0] \").replace('保存笔记。', '').replace('保存到 Notion。', '').replace('保存到notion。', '').replace('保存到概念。', '').replace('保存笔记，', '').replace('保存到 Notion，', '').replace('保存到notion，', '').replace('保存到概念，', '').replace('保存笔记', '').replace('保存到 Notion', '').replace('保存到notion', '').replace('保存到概念', '') }}{{ $json.result[0].replace('保存笔记，', '').replace('保存到 Notion，', '').replace('保存到notion，', '').replace('保存到概念，', '').replace('保存笔记', '').replace('保存到 Notion', '').replace('保存到notion', '').replace('保存到概念', '') }}",
+        "title": "={{ $jmespath($json, \"DisplayText || body.content || result[0] \").replace('Saved note.', '').replace('Saved to Notion.', '').replace('Saved to notion.', '').replace('Saved to concept.', '').replace('Saved note,', '').replace('Saved to Notion,', '').replace('Saved to notion,', '').replace('Saved to concept,', '').replace('Saved note', '').replace('Saved to Notion', '').replace('Saved to notion', '').replace('Saved to concept,', '') }}{{ $json.result[0].replace('Saved note,', '').replace('Saved to Notion,', '').replace('Save to notion,', '').replace('Save to concept,', '').replace('Save note', '').replace('Save to Notion', '').replace('Save to notion', '').replace('Save to concept', '') }}",
         "propertiesUi": {
           "propertyValues": [
             {
               "key": "Name|title",
-              "title": "={{ $jmespath($json, \"DisplayText || body.content || result[0] \").replace('保存笔记。', '').replace('保存到 Notion。', '').replace('保存到notion。', '').replace('保存到概念。', '').replace('保存笔记，', '').replace('保存到 Notion，', '').replace('保存到notion，', '').replace('保存到概念，', '').replace('保存笔记', '').replace('保存到 Notion', '').replace('保存到notion', '').replace('保存到概念', '') }}{{ $json.result[0].replace('保存笔记，', '').replace('保存到 Notion，', '').replace('保存到notion，', '').replace('保存到概念，', '').replace('保存笔记', '').replace('保存到 Notion', '').replace('保存到notion', '').replace('保存到概念', '') }}"
+              "title": "={{ $jmespath($json, \"DisplayText || body.content || result[0] \").replace('Saved note.', '').replace('Saved to Notion.', '').replace('Saved to notion.', '').replace('Saved to concept.', '').replace('Saved note,', '').replace('Saved to Notion,', '').replace('Saved to notion,', '').replace('Saved to concept,', '').replace('Saved note', '').replace('Saved to Notion', '').replace('Saved to notion', '').replace('Saved to concept,', '') }}{{ $json.result[0].replace('Saved note,', '').replace('Saved to Notion,', '').replace('Save to notion,', '').replace('Save to concept,', '').replace('Save note', '').replace('Save to Notion', '').replace('Save to notion', '').replace('Save to concept', '') }}"
             },
             {
               "key": "Description|rich_text",
@@ -572,7 +572,7 @@
     },
     {
       "parameters": {
-        "content": "## 介绍\n此流程是个基础版，在这个基础上可以增加动态用户控制（谁能用），使用次数，或者将信息都保存在如 notion 中使用AI进行定时总结，可以发挥想象力。\n\n作者：[OSEN](https://twitter.com/osen77)\n更新时间：2024-03-28",
+        "content": "## Introduction\nThis process is a basic version. On this basis, you can add dynamic user control (who can use it), the number of times it is used, or save all the information in notion and use AI for regular summaries. You can use your imagination.\n\nAuthor: [OSEN](https://twitter.com/osen77)\nUpdated: 2024-03-28",
         "height": 174.57774916443182,
         "width": 510.70100642277913,
         "color": 4
@@ -594,14 +594,14 @@
           "RecognitionStatus": "Success",
           "Offset": 4700000,
           "Duration": 47800000,
-          "DisplayText": "保存笔记，这是最后最后一次。"
+          "DisplayText": "Save the note, this is the last time."
         }
       }
     ],
     "user_content": [
       {
         "json": {
-          "user_content": "你好"
+          "user_content": "Hello"
         }
       }
     ],
@@ -612,7 +612,7 @@
           "err_msg": "success.",
           "err_no": 0,
           "result": [
-            "再测试一下。"
+            "Test it again."
           ],
           "sn": "30245148891709462069"
         }
@@ -785,7 +785,7 @@
       "createdAt": "2024-03-27T16:13:11.451Z",
       "updatedAt": "2024-03-27T16:13:11.451Z",
       "id": "37Oxh6HY6Z77Gid5",
-      "name": "分享"
+      "name": "share"
     }
   ]
 }
